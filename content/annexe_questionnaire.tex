@@ -108,10 +108,10 @@ Le questionnaire adopte une architecture modulaire : un tronc commun de 42 items
 
 \textbf{B5.} Quel est votre niveau de compétence auto-évalué dans l'utilisation de l'\gls{ia} générative ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item Débutant (je découvre ces outils)
-  \item Intermédiaire (j'utilise les fonctions de base)
-  \item Avancé (je maîtrise l'ingénierie de prompts et les usages complexes)
-  \item Expert (je forme d'autres personnes à leur usage)
+  \item Débutant : Usage basique (Je pose des questions simples, je l'utilise un peu comme un moteur de recherche).
+  \item Intermédiaire : Usage actif (Je sais rédiger des consignes détaillées pour générer ou corriger du texte, du code, ou résumer des documents).
+  \item Avancé : Usage automatisé (J'intègre l'IA dans mes méthodes de travail pour automatiser des tâches répétitives ou analyser de gros volumes de données).
+  \item Expert : Usage technique ou de référence (Je développe des outils complexes avec l'IA, ou je suis la personne ressource qui aide et forme les autres).
 \end{itemize}
 
 \textbf{B6.} Avez-vous déjà déclaré auprès d'un enseignant votre usage de l'\gls{ia} générative pour un travail académique ?
@@ -146,6 +146,7 @@ Le questionnaire adopte une architecture modulaire : un tronc commun de 42 items
   \item Je crains les problèmes d'intégrité académique ou éthique
   \item Je ne fais pas confiance à la fiabilité des résultats
   \item L'établissement n'a pas donné de règles claires
+  \item Je n'ai pas accès à ces outils adaptés (outils payants, etc)
   \item Autre raison : \underline{\hspace{4cm}}
 \end{itemize}
 
@@ -155,15 +156,14 @@ Le questionnaire adopte une architecture modulaire : un tronc commun de 42 items
 
 \textbf{C1.} Quels outils d'\gls{ia} générative utilisez-vous ? \textit{(Plusieurs réponses possibles)}
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item ChatGPT (OpenAI) — version gratuite
-  \item ChatGPT (OpenAI) — version payante (Plus, Team, Enterprise)
+  \item ChatGPT (OpenAI)
   \item Claude (Anthropic)
   \item Google Gemini
   \item Microsoft Copilot (Bing Chat)
-  \item GitHub Copilot
-  \item DeepL (traduction)
-  \item Mistral AI
-  \item Perplexity
+  \item le Chat (Mistral AI)
+  \item GitHub Copilot, Cursor, Codex, Claude Code (Génération de code)
+  \item Perplexity (Recherche de documentaires)
+  \item Modèles locaux (Ollama, vLLM, etc)
   \item Autre : \underline{\hspace{4cm}}
 \end{itemize}
 
@@ -179,6 +179,8 @@ Le questionnaire adopte une architecture modulaire : un tronc commun de 42 items
   \item Génération d'exercices ou de questions d'examen
   \item Création de supports visuels (diagrammes, schémas)
   \item Aide à la correction ou à l'évaluation de travaux
+  \item Brainstorming et génération d'idées
+  \item Analyse de données (tableur, CSV, etc.)
   \item Autre : \underline{\hspace{4cm}}
 \end{itemize}
 
@@ -296,56 +298,143 @@ Les affirmations suivantes utilisent une échelle de Likert en 5 points : 1 = Pa
   \item Autre : \underline{\hspace{4cm}}
 \end{itemize}
 
+\textbf{E4.} Combien de temps seriez-vous prêt·e à consacrer chaque année à une formation sur l'\gls{ia} ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Moins de 2 heures
+  \item 2 à 5 heures
+  \item 5 à 10 heures
+  \item Plus de 10 heures
+\end{itemize}
+ 
 \medskip
 
 \subsection{Section F — Questions spécifiques}
 
 \subsubsection{Version Étudiants}
 
-\textbf{F1.} Utilisez-vous GitHub Copilot ou un assistant de code similaire pour vos projets informatiques ?
+
+
+\textbf{F1.} Utilisez-vous l'\gls{ia} générative pour les tâches
+d'apprentissage suivantes ? \textit{(Plusieurs réponses possibles)}
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item Oui, régulièrement
-  \item Oui, occasionnellement
-  \item Non, mais je connais cet outil
-  \item Non, je ne connais pas cet outil
-  \item Non concerné (je ne code pas)
+  \item Comprendre des concepts ou des formules complexes du cours
+  \item Synthétiser les points clés et préparer des fiches de révision
+  \item Générer des questions d'entraînement et corriger mes réponses
+  \item Rédiger des rapports, devoirs ou dissertations
+  \item Lire et comprendre des articles ou documents techniques en langue
+        étrangère
+  \item Préparer des soutenances orales ou des présentations
+  \item Je n'utilise pas l'\gls{ia} pour ces tâches
 \end{itemize}
 
-\textbf{F2.} \textit{[Si utilisateur de code assisté]} Vérifiez-vous systématiquement le code généré par l'\gls{ia} avant de l'utiliser ?
+
+\textbf{F2.} Estimez-vous que l'émergence de l'\gls{ia} a modifié votre
+perception des compétences fondamentales de votre spécialité ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item Toujours
-  \item Souvent
-  \item Parfois
-  \item Rarement
-  \item Jamais
+  \item Oui, je peux me concentrer davantage sur la compréhension
+        disciplinaire plutôt que sur la mémorisation de détails ou de syntaxe
+  \item Oui, mais je crains de devenir trop dépendant·e de l'\gls{ia} au
+        détriment de mes compétences de base
+  \item Non, je ne perçois pas de changement notable
+  \item Je n'ai pas encore réfléchi à cette question
 \end{itemize}
 
-\textbf{F3.} Avez-vous déjà uploadé des données issues de projets industriels ou de stages dans un outil d'\gls{ia} générative public (ChatGPT, Claude, etc.) ?
+
+\textbf{F3.} Vos cours ou projets impliquent-ils de la programmation ou
+de l'écriture de code ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui \hspace{1cm} 
+  \item Non \hspace{0.9cm} $\rightarrow$ \textit{Passez directement à F9}
+\end{itemize}
+
+\textbf{F4.} Quels outils d'\gls{ia} utilisez-vous pour la programmation ?
+\textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item ChatGPT / Claude / Gemini (mode conversationnel)
+  \item GitHub Copilot (autocomplétion dans l'éditeur)
+  \item Cursor / Windsurf (éditeur intégrant l'\gls{ia})
+  \item Claude Code / Devin ou autre outil en mode agent (CLI)
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+ 
+\textbf{F5.} Lorsque vous utilisez un assistant de programmation \gls{ia},
+quel mode d'interaction utilisez-vous principalement ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Mode conversationnel : je pose des questions dans une interface de
+        chat et je copie-colle le code manuellement
+  \item Mode éditeur intégré : l'\gls{ia} propose des suggestions ou
+        complétions directement dans mon éditeur de code
+  \item Mode agent : je décris une tâche et l'\gls{ia} l'exécute de façon
+        autonome (ex. Claude Code CLI)
+  \item Mode mixte : j'utilise plusieurs des modes ci-dessus
+\end{itemize}
+ 
+\textbf{F6.} Dans vos travaux de programmation, quelle proportion du code
+est générée par l'\gls{ia} ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Quasi nulle ($< 10\,\%$)
+  \item Minoritaire ($10$--$30\,\%$)
+  \item Significative ($30$--$60\,\%$)
+  \item Majoritaire ($60$--$90\,\%$)
+  \item Quasi totale ($> 90\,\%$)
+\end{itemize}
+ 
+\textbf{F7.} Comment décrivez-vous généralement une tâche de programmation
+à l'\gls{ia} ? \textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Une phrase ou une description courte et simple
+  \item Du code existant accompagné d'une demande de modification précise
+  \item Un document de spécifications détaillé (Markdown, cahier des
+        charges structuré)
+  \item Une description de l'architecture globale pour que l'\gls{ia}
+        génère le squelette du projet
+  \item Des fichiers ou captures d'écran existants pour contextualiser le
+        projet
+\end{itemize}
+ 
+\textbf{F8.} Une fois le code généré par l'\gls{ia}, que faites-vous ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Je l'utilise directement sans vérification
+  \item Je le parcours rapidement avant de l'utiliser
+  \item Je le lis attentivement et comprends chaque ligne avant de
+        l'utiliser
+  \item Je le valide à l'aide de tests avant de l'utiliser
+  \item Je le comprends, le modifie et n'utilise que ma version remaniée
+\end{itemize}
+
+\textbf{F9.} Avez-vous déjà uploadé des données issues de projets
+industriels ou de stages dans un outil d'\gls{ia} générative public
+(ChatGPT, Claude, etc.) ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui
   \item Non
-  \item Je ne sais pas
-  \item Non concerné (je n'ai pas encore de projet industriel ou stage)
+  \item Je ne sais pas si cela représente un risque
+  \item Non concerné·e (je n'ai pas encore de projet industriel ou de
+        stage)
 \end{itemize}
-
-\textbf{F4.} Êtes-vous conscient·e des risques liés à la confidentialité lorsque vous utilisez des outils d'\gls{ia} publics pour des données de projets industriels ?
+ 
+\textbf{F10.} Êtes-vous conscient·e des risques liés à la confidentialité
+lorsque vous utilisez des outils d'\gls{ia} publics avec des données de
+projets industriels ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, tout à fait
   \item Oui, plutôt
   \item Non, plutôt pas
   \item Non, pas du tout
 \end{itemize}
-
-\textbf{F5.} Considérez-vous que l'usage de l'\gls{ia} générative pour rédiger un devoir est une forme de triche ?
+ 
+\textbf{F11.} Considérez-vous que l'usage de l'\gls{ia} générative pour
+rédiger un devoir est une forme de triche ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, dans tous les cas
-  \item Oui, si l'enseignant ne l'a pas autorisé
-  \item Non, si on déclare son usage
+  \item Oui, si l'enseignant ne l'a pas explicitement autorisé
+  \item Non, à condition de déclarer son usage
   \item Non, jamais
   \item Je ne sais pas
 \end{itemize}
-
-\textbf{F6.} Avez-vous déjà ressenti de l'anxiété ou de la culpabilité à utiliser l'\gls{ia} générative pour vos études ?
+ 
+\textbf{F12.} Avez-vous déjà ressenti de l'anxiété ou de la culpabilité
+à utiliser l'\gls{ia} générative pour vos études ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, souvent
   \item Oui, parfois
@@ -398,7 +487,27 @@ Les affirmations suivantes utilisent une échelle de Likert en 5 points : 1 = Pa
   \item Je ne sais pas
 \end{itemize}
 
-\textbf{F6.} Avez-vous adapté vos modalités d'évaluation en raison de l'\gls{ia} générative ?
+\textbf{F6.} Quelle est votre position concernant l'usage de l'\gls{ia}
+générative par vos étudiants dans le cadre de vos cours ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Interdit, je l'indique explicitement dans les règles du cours
+  \item Autorisé sous conditions (déclaration obligatoire ou autorisation
+        préalable)
+  \item Libre, à condition de mentionner l'usage de l'\gls{ia}
+  \item Totalement libre, sans restriction particulière
+  \item Je n'ai pas encore de position ou de règle clairement définie
+\end{itemize}
+
+\textbf{F7.} Avez-vous communiqué explicitement vos règles d'usage de
+l'\gls{ia} à vos étudiants en début de cours ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, par écrit (syllabus, règlement, consignes formalisées)
+  \item Oui, oralement lors d'une séance
+  \item Non, mais j'envisage de le faire
+  \item Non, je ne pense pas que ce soit nécessaire
+\end{itemize}
+
+\textbf{F8.} Avez-vous adapté vos modalités d'évaluation en raison de l'\gls{ia} générative ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, substantiellement
   \item Oui, légèrement
@@ -406,7 +515,7 @@ Les affirmations suivantes utilisent une échelle de Likert en 5 points : 1 = Pa
   \item Non, je ne pense pas que ce soit nécessaire
 \end{itemize}
 
-\textbf{F7.} Seriez-vous prêt·e à devenir référent·e \gls{ia} pour accompagner vos collègues ?
+\textbf{F9.} Seriez-vous prêt·e à devenir référent·e \gls{ia} pour accompagner vos collègues ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, volontiers
   \item Oui, si je reçois une formation préalable
@@ -414,57 +523,148 @@ Les affirmations suivantes utilisent une échelle de Likert en 5 points : 1 = Pa
   \item Non, je n'ai pas le temps
 \end{itemize}
 
+\textbf{F10.} Utilisez-vous des outils de détection de contenu généré par
+l'\gls{ia} (Turnitin, GPTZero, etc.) pour évaluer les travaux de vos
+étudiants ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, de manière systématique
+  \item Oui, occasionnellement
+  \item Non, mais j'y ai réfléchi
+  \item Non, je considère ces outils peu fiables
+  \item Non, je n'estime pas cela nécessaire
+\end{itemize}
+ 
+\textbf{F11.} Selon vous, quel sera l'impact de l'\gls{ia} générative sur
+le métier d'enseignant-chercheur ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Une menace significative : certaines fonctions pédagogiques
+        pourraient être remplacées
+  \item Une transformation profonde, mais le rôle de l'enseignant évoluera
+        sans disparaître
+  \item Un impact limité : les compétences fondamentales de l'enseignement
+        ne peuvent être remplacées
+  \item Une opportunité : l'\gls{ia} libérera du temps pour des tâches à
+        plus haute valeur ajoutée
+  \item Je n'ai pas encore de position tranchée sur ce sujet
+\end{itemize}
+ 
+\textbf{F12.} Abordez-vous activement avec vos étudiants la question d'un
+usage responsable de l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, c'est intégré dans le contenu de mon cours
+  \item Oui, j'en parle ponctuellement
+  \item Non, je considère que c'est du ressort de l'établissement
+  \item Non, cela ne relève pas de mes responsabilités pédagogiques
+\end{itemize}
+
 \subsubsection{Version BIATSS}
 
-\textbf{F1.} Pour quelles tâches professionnelles l'\gls{ia} générative pourrait-elle vous aider ? \textit{(Plusieurs réponses possibles)}
+\textbf{F1.} Quelles sont les tâches qui composent principalement votre
+travail au quotidien ? \textit{(Plusieurs réponses possibles)}
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item Rédaction de courriels, comptes rendus, rapports
-  \item Traitement et analyse de données
-  \item Organisation et planification
-  \item Recherche documentaire
-  \item Traduction de documents
-  \item Support utilisateurs (réponses aux questions récurrentes)
-  \item Je ne vois pas d'application à mon travail
+  \item Rédaction ou traitement de courriels, courriers et communications
+  \item Rédaction de rapports, comptes rendus ou documents administratifs
+  \item Utilisation de tableurs (Excel) pour le traitement de données ou
+        de statistiques
+  \item Utilisation de traitements de texte (Word) pour la production de
+        modèles ou de documents
+  \item Gestion d'agendas, de plannings ou de réservations
+  \item Accueil et réponse aux demandes récurrentes des personnels et
+        étudiants
+  \item Classement, archivage et gestion documentaire
+  \item Opérations liées aux achats, remboursements ou finances
   \item Autre : \underline{\hspace{4cm}}
 \end{itemize}
 
-\textbf{F2.} Votre responsable hiérarchique vous encourage-t-il à utiliser l'\gls{ia} générative ?
+\textbf{F2.} Dans votre travail quotidien, quelles tâches vous semblent
+les plus chronophages ou les plus fastidieuses ?
+\textit{(Plusieurs réponses possibles)}
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item Oui, activement
-  \item Oui, mais sans accompagnement
-  \item Non, ce sujet n'a jamais été évoqué
-  \item Non, il/elle y est opposé·e
+  \item Rédiger ou mettre en forme des documents (courriels, rapports,
+        notes de service\ldots)
+  \item Rechercher une information dans plusieurs systèmes ou fichiers
+  \item Répondre à des questions récurrentes (demandes fréquentes des
+        personnels ou étudiants\ldots)
+  \item Saisir ou organiser manuellement des données
+  \item Traduire ou comprendre des contenus en langue étrangère
+  \item Coordonner des réunions ou des plannings entre plusieurs
+        interlocuteurs
+  \item Autre : \underline{\hspace{4cm}}
 \end{itemize}
-
-\textbf{F3.} Avez-vous accès à des outils d'\gls{ia} générative fournis par l'établissement ?
+ 
+\textbf{F3.} Effectuez-vous des opérations répétitives à intervalles
+réguliers dans votre travail ? \textit{(Par exemple : générer chaque mois
+le même type de tableau, envoyer chaque semestre les mêmes types de
+communications\ldots)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, en grande quantité
+  \item Oui, dans une certaine mesure
+  \item Rarement
+  \item Pratiquement jamais
+\end{itemize}
+ 
+\textbf{F4.} Avez-vous déjà entendu parler d'outils capables de rédiger
+des documents, de résumer des informations ou de répondre à des questions
+(tels que ChatGPT, Claude, Copilot\ldots) ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, je les utilise déjà
+  \item Oui, mais je ne les ai jamais utilisés
+  \item J'en ai entendu parler, mais je ne sais pas ce qu'ils peuvent
+        faire concrètement
+  \item Non, je ne connais pas du tout ce type d'outil
+\end{itemize}
+ 
+\textbf{F5.} Au regard des tâches que vous venez de décrire, dans quels
+domaines pensez-vous qu'un outil d'\gls{ia} pourrait vous aider ?
+\textit{(Plusieurs réponses possibles)}
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Rédiger ou reformuler des courriels, notes et rapports
+  \item Rechercher rapidement une information dans un volume important de
+        documents
+  \item Répondre automatiquement aux questions fréquentes
+  \item Organiser ou analyser des données
+  \item Traduire des documents
+  \item Je ne vois pas en quoi l'\gls{ia} pourrait m'aider
+  \item Je ne suis pas en mesure de répondre à cette question
+\end{itemize}
+ 
+\textbf{F6.} Votre responsable hiérarchique vous a-t-il déjà évoqué
+l'utilisation d'outils d'\gls{ia} dans votre travail ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, il/elle encourage activement leur utilisation et fournit un
+        accompagnement
+  \item Oui, il/elle en a parlé, mais sans donner de suite concrète
+  \item Non, ce sujet n'a jamais été abordé
+  \item Non, il/elle y est explicitement opposé·e
+\end{itemize}
+ 
+\textbf{F7.} Avez-vous accès à des outils d'\gls{ia} générative fournis
+par l'établissement ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui
   \item Non
   \item Je ne sais pas
 \end{itemize}
-
-\textbf{F4.} Êtes-vous inquiet·ète de l'impact de l'\gls{ia} sur votre emploi ou votre rémunération ?
+ 
+\textbf{F8.} Êtes-vous inquiet·ète que le développement de l'\gls{ia}
+affecte votre poste ou le contenu de votre travail ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, très inquiet·ète
   \item Oui, plutôt inquiet·ète
   \item Non, plutôt pas inquiet·ète
   \item Non, pas du tout inquiet·ète
+  \item Au contraire, je pense que l'\gls{ia} pourrait valoriser mon
+        travail
 \end{itemize}
-
-\textbf{F5.} Pensez-vous que l'\gls{ia} générative pourrait améliorer votre qualité de vie au travail (gain de temps, réduction des tâches répétitives) ?
+ 
+\textbf{F9.} Pensez-vous que l'\gls{ia} générative pourrait améliorer
+votre qualité de vie au travail (gain de temps, réduction des tâches
+répétitives) ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, certainement
   \item Oui, probablement
   \item Non, probablement pas
   \item Non, certainement pas
-\end{itemize}
-
-\textbf{F6.} Avez-vous besoin d'un accompagnement managérial pour intégrer l'\gls{ia} dans vos pratiques professionnelles ?
-\begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item Oui, absolument
-  \item Oui, plutôt
-  \item Non, plutôt pas
-  \item Non, pas du tout
 \end{itemize}
 
 \medskip
