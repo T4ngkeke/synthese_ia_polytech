@@ -24,22 +24,32 @@ Le questionnaire adopte une architecture modulaire : un tronc commun de 42 items
 
 \textbf{A2.} \textit{[Si Étudiant]} Dans quelle filière êtes-vous inscrit·e ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item Informatique et Microélectronique des Systèmes Intelligents (IMSI)
-  \item Matériaux (MAT)
-  \item Mécanique (MEC)
-  \item Instrumentation, Automatique et Informatique (IAI)
-  \item Environnement, Bâtiment, Énergie (EBE)
-  \item Génie Biomédical (GBM)
+  \item Écologie Industrielle et Territoriale (EIT)
+  \item INformatique Données Usages (IDU)
+  \item Mécanique Mécatronique et Matériaux (MM)
+  \item Système Embarqué et Automatisme (SEA)
+  \item Cycle préparatoire (PeiP)
+  \item Autre : \underline{\hspace{4cm}}
 \end{itemize}
 
 \textbf{A3.} \textit{[Si Étudiant]} Vous êtes en :
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Formation Initiale
+  \item Alternance
+  \item Formation Continue
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{A4.} \textit{[Si Étudiant]} Vous êtes en :
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item PeiP (1\textsuperscript{re} ou 2\textsuperscript{e} année cycle préparatoire)
   \item 3\textsuperscript{e} année (1\textsuperscript{re} année cycle ingénieur)
   \item 4\textsuperscript{e} année (2\textsuperscript{e} année cycle ingénieur)
   \item 5\textsuperscript{e} année (3\textsuperscript{e} année cycle ingénieur)
 \end{itemize}
 
-\textbf{A4.} \textit{[Si Enseignant-chercheur]} Quelle est votre discipline principale d'enseignement ?
+
+\textbf{A5.} \textit{[Si Enseignant-chercheur]} Quelle est votre discipline principale d'enseignement ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Informatique et sciences du numérique
   \item Mathématiques et modélisation
@@ -50,7 +60,18 @@ Le questionnaire adopte une architecture modulaire : un tronc commun de 42 items
   \item Autre : \underline{\hspace{4cm}}
 \end{itemize}
 
-\textbf{A5.} \textit{[Si BIATSS]} Quelle est votre fonction principale ?
+\textbf{A6.} \textit{[Si Enseignant-chercheur]} Vous êtes rattaché·e à :
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item LISTIC
+  \item SYMME
+  \item LOCIE
+  \item IREGE
+  \item LAPP
+  \item LAMA
+  \item Autre : \underline{\hspace{4cm}}
+\end{itemize}
+
+\textbf{A7.} \textit{[Si BIATSS]} Quelle est votre fonction principale ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Administration (gestion, finances, RH)
   \item Scolarité et relations étudiantes
@@ -61,11 +82,21 @@ Le questionnaire adopte une architecture modulaire : un tronc commun de 42 items
   \item Autre : \underline{\hspace{4cm}}
 \end{itemize}
 
-\textbf{A6.} Connaissez-vous l'existence de règles ou de recommandations sur l'usage de l'\gls{ia} générative au sein de Polytech ou de l'\gls{usmb} ?
+\textbf{A8.} Saviez-vous qu'une charte sur l'usage de l'\gls{ia} générative a récemment été adoptée par l'\gls{usmb} ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
-  \item Oui, je connais les règles
-  \item Non, je ne connais pas les règles
-  \item Je ne sais pas s'il existe des règles
+  \item Oui, j'en avais déjà connaissance
+  \item J'en avais vaguement entendu parler, sans en connaître le contenu
+  \item Non, je l'apprends à l'instant
+\end{itemize}
+
+\textbf{A9.} Estimez-vous que cette charte vous donne
+des orientations suffisamment claires pour guider votre
+usage de l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, elle est claire et suffisante
+  \item Partiellement, certains points restent flous
+  \item Non, elle est trop vague ou incomplète
+  \item Je ne suis pas en mesure de me prononcer
 \end{itemize}
 
 \medskip
@@ -422,8 +453,37 @@ projets industriels ?
   \item Non, plutôt pas
   \item Non, pas du tout
 \end{itemize}
+
+\textbf{F11.} Durant votre stage ou alternance, votre entreprise a-t-elle
+défini des règles ou une politique claire concernant l'utilisation de
+l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, une charte ou des directives strictes encadrent son utilisation
+  \item Oui, mais les règles sont floues ou peu appliquées en pratique
+  \item Non, il n'y a aucune règle établie à ma connaissance
+  \item Non concerné·e
+\end{itemize}
+
+\textbf{F12.} Votre entreprise met-elle à disposition des abonnements ou
+des versions professionnelles sécurisées d'outils d'\gls{ia} (ex. GitHub
+Copilot Enterprise, ChatGPT Team/Enterprise) ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Oui, l'entreprise fournit et finance ces outils officiellement
+  \item Non, je dois utiliser mes propres outils (comptes personnels gratuits ou payants)
+  \item Non, et l'utilisation d'outils d'\gls{ia} tiers est techniquement bloquée ou formellement interdite
+  \item Non concerné·e
+\end{itemize}
+
+\textbf{F13.} Comment percevez-vous l'attitude générale de votre encadrement
+ou de votre entreprise face à l'\gls{ia} générative ?
+\begin{itemize}[label=$\square$, leftmargin=1.5cm]
+  \item Très favorable : son usage est activement encouragé pour gagner en productivité
+  \item Tolérante : son usage est accepté, mais pas particulièrement mis en avant
+  \item Méfiante : des inquiétudes (sécurité, qualité du code, éthique) freinent son adoption
+  \item Non concerné·e
+\end{itemize}
  
-\textbf{F11.} Considérez-vous que l'usage de l'\gls{ia} générative pour
+\textbf{F14.} Considérez-vous que l'usage de l'\gls{ia} générative pour
 rédiger un devoir est une forme de triche ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, dans tous les cas
@@ -433,7 +493,7 @@ rédiger un devoir est une forme de triche ?
   \item Je ne sais pas
 \end{itemize}
  
-\textbf{F12.} Avez-vous déjà ressenti de l'anxiété ou de la culpabilité
+\textbf{F15.} Avez-vous déjà ressenti de l'anxiété ou de la culpabilité
 à utiliser l'\gls{ia} générative pour vos études ?
 \begin{itemize}[label=$\square$, leftmargin=1.5cm]
   \item Oui, souvent
